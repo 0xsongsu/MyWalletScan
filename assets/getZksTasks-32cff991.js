@@ -1,0 +1,1 @@
+import{a as e}from"./axios-5c2c9f37.js";async function c(s){try{let r="https://zksync2-mainnet-explorer.zksync.io/transactions?limit=100&direction=older&accountAddress="+s;return(await e.get(r)).data.list.map(t=>t.data.contractAddress)}catch(r){return console.error(r),"Error"}}export{c as g};
